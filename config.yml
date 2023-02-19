@@ -1,0 +1,35 @@
+baseURL: 'https://www.wrenhold.com'
+languageCode: en-gb
+title: Catherine Wrenhold
+theme: PaperMod
+
+Params:
+  showWordCount: true
+  showReadingTime: true
+  dateFormat: 02 January 2006
+  defaultTheme: auto
+  showCodeCopyButtons: true
+  showtoc: true
+
+  socialIcons:
+    - name: github
+      url: 'https://github.com/cwrenhold'
+    - name: linkedin
+      url: 'https://www.linkedin.com/in/catherine-wrenhold-84a58623a'
+
+  homeInfoParams:
+    title: Blog
+    content: >-
+      Hi, this is just a place for me to write down things for myself, showing
+      what I've learnt and where I think it might help others.
+
+menu:
+  main:
+    - identifier: tags
+      name: Tags
+      url: /tags/
+      weight: 10
+
+markup:
+  highlight:
+    lineNos: true
