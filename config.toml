@@ -2,3 +2,7 @@ baseURL = 'http://example.org/'
 languageCode = 'en-gb'
 title = 'Catherine Wrenhold'
 theme = 'PaperMod'
+
+[Params]
+showWordCount =  true
+showReadingTime = true
