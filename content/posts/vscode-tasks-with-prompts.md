@@ -54,8 +54,7 @@ The task itself is very similar to one without a prompt, the only difference is 
     "args": [
         "new",
         "posts/${input:postName}.md"
-    ],
-    "problemMatcher": "$msCompile"
+    ]
 }
 ```
 
@@ -85,8 +84,7 @@ After these additions, your `tasks.json` file should look something like this:
             "args": [
                 "new",
                 "posts/${input:postName}.md"
-            ],
-            "problemMatcher": "$msCompile"
+            ]
         }
     ],
     "inputs": [
