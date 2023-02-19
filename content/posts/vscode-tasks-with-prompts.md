@@ -54,11 +54,14 @@ The task itself is very similar to one without a prompt, the only difference is 
     "args": [
         "new",
         "posts/${input:postName}.md"
-    ]
+    ],
+    "problemMatcher": []
 }
 ```
 
 Like most tasks, we're setting up a simple `label`, `command`, and so on, it's only when we get down to the `args` that our input comes in. In this, rather than putting a hardcoded string for the last argument (i.e. the path to the file to be created), we're going to put in the parts which will never change (the folder path and the file extension), and the put in an `input` in the middle. This ends up looking like this:
+
+Note: There is an empty `problemMatcher` here, this is to tell vscode that we don't want to process the output of this task in anyway, which means we don't get any information for vscode from this task other than what we see in the task output ourselves.
 
 ```json
 "posts/${input:postName}.md"
@@ -84,7 +87,8 @@ After these additions, your `tasks.json` file should look something like this:
             "args": [
                 "new",
                 "posts/${input:postName}.md"
-            ]
+            ],
+            "problemMatcher": []
         }
     ],
     "inputs": [
