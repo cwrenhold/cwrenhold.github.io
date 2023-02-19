@@ -24,8 +24,7 @@
             "args": [
                 "new",
                 "posts/${input:postName}.md"
-            ],
-            "problemMatcher": "$msCompile"
+            ]
         }
     ],
     "inputs": [
