@@ -1,7 +1,6 @@
 ---
 title: "Creating tasks in Vscode for running Rspec tests for Rails projects"
 date: 2023-02-19T19:21:46Z
-draft: true
 tags: ['Ruby', 'Rails', 'Vscode']
 ---
 
