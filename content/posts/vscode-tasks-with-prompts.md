@@ -28,13 +28,13 @@ This setup is broken down into two parts:
 This is a very simple input, we want a string from the user, and we can use a simple prompt for this. We'll go into our `tasks.json` file and add the following:
 
 ```json
-    "inputs": [
-        {
-            "id": "postName",
-            "description": "Post filename:",
-            "type": "promptString"
-        }
-    ]
+"inputs": [
+    {
+        "id": "postName",
+        "description": "Post filename:",
+        "type": "promptString"
+    }
+]
 ```
 
 Here, we are creating a new set of inputs to exist in our set of tasks for the project, and for this we only need one input. This input will be called `postName`, and the `description` will provide a prompt to the user running out task. The `type` then sets how vscode will handle this request, in our situation, `promptString` will prompt the user to enter a string of text - nice an obvious!
@@ -44,6 +44,37 @@ Here, we are creating a new set of inputs to exist in our set of tasks for the p
 The task itself is very similar to one without a prompt, the only difference is that we want to use out `input` (which we called `postName`) so that when the task is run, the user received that prompt. This will look something like this:
 
 ```json
+{
+    "label": "Create new post",
+    "command": "hugo",
+    "type": "process",
+    "options": {
+        "cwd": "${workspaceFolder}"
+    },
+    "args": [
+        "new",
+        "posts/${input:postName}.md"
+    ],
+    "problemMatcher": "$msCompile"
+}
+```
+
+Like most tasks, we're setting up a simple `label`, `command`, and so on, it's only when we get down to the `args` that our input comes in. In this, rather than putting a hardcoded string for the last argument (i.e. the path to the file to be created), we're going to put in the parts which will never change (the folder path and the file extension), and the put in an `input` in the middle. This ends up looking like this:
+
+```json
+"posts/${input:postName}.md"
+```
+
+This will mean that if the user entered `my-new-post`, the argument that is actually sent to `hugo` would end up as `posts/my-new-post.md`.
+
+## Finished tasks.json
+
+After these additions, your `tasks.json` file should look something like this:
+
+```json
+{
+    "version": "2.0.0",
+    "tasks": [
         {
             "label": "Create new post",
             "command": "hugo",
@@ -57,12 +88,13 @@ The task itself is very similar to one without a prompt, the only difference is 
             ],
             "problemMatcher": "$msCompile"
         }
+    ],
+    "inputs": [
+        {
+            "id": "postName",
+            "description": "Post filename:",
+            "type": "promptString"
+        }
+    ]
+}
 ```
-
-Like most tasks, we're setting up a simple `label`, `command`, and so on, it's only when we get down to the `args` that our input comes in. In this, rather than putting a hardcoded string for the last argument (i.e. the path to the file to be created), we're going to put in the parts which will never change (the folder path and the file extension), and the put in an `input` in the middle. This ends up looking like this:
-
-```json
-"posts/${input:postName}.md"
-```
-
-This will mean that if the user entered `my-new-post`, the argument that is actually sent to `hugo` would end up as `posts/my-new-post.md`.

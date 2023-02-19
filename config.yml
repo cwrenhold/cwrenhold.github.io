@@ -6,7 +6,7 @@ theme: PaperMod
 Params:
   showWordCount: true
   showReadingTime: true
-  dateFormat: 02 January 2006
+  dateFormat: 02 January, 2006
   defaultTheme: auto
   showCodeCopyButtons: true
   showtoc: true
