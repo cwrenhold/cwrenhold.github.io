@@ -3,7 +3,14 @@
 <header class="page-header">
   {{- partial "breadcrumbs.html" . }}
   <h1>
-    {{ .Title }}
+    {{ $name := split .Title " " }}
+    {{ range $name }}
+      {{ if in "the and or in" . }}
+        {{ . }}
+      {{ else }}
+        {{ . | humanize }}
+      {{ end }}
+    {{ end }}
   </h1>
 </header>
 

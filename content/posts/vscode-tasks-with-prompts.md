@@ -1,7 +1,7 @@
 ---
 title: "Vscode Tasks With Prompts"
 date: 2023-02-19T16:33:24Z
-tags: ['Vscode', 'Automation']
+tags: ['vscode', 'automation']
 ---
 
 Using tasks with inputs is a quick and powerful way to add a lot of additional functionality to Vscode, this can extend the normal task tooling to make it much more flexible and powerful. In this short article, we'll walk through creating a task with a simple input and how we can then leverage that.
