@@ -15,14 +15,24 @@
             "problemMatcher": []
         },
         {
-            "label": "Build",
-            "type": "shell",
+            "label": "Create new post",
             "command": "hugo",
-            "group": {
-                "kind": "build",
-                "isDefault": true
+            "type": "process",
+            "options": {
+                "cwd": "${workspaceFolder}"
             },
-            "problemMatcher": []
+            "args": [
+                "new",
+                "posts/${input:postName}.md"
+            ],
+            "problemMatcher": "$msCompile"
+        }
+    ],
+    "inputs": [
+        {
+            "id": "postName",
+            "description": "Post filename:",
+            "type": "promptString"
         }
     ]
 }
