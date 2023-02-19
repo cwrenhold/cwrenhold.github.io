@@ -1,4 +1,4 @@
-baseURL = 'http://example.org/'
+baseURL = 'https://www.wrenhold.com'
 languageCode = 'en-gb'
 title = 'Catherine Wrenhold'
 theme = 'PaperMod'
@@ -6,3 +6,4 @@ theme = 'PaperMod'
 [Params]
 showWordCount =  true
 showReadingTime = true
+dateFormat = "02 January 2006"
