@@ -9,7 +9,9 @@ Params:
   dateFormat: 02 January, 2006
   defaultTheme: auto
   showCodeCopyButtons: true
+  showShareButtons: true
   showtoc: true
+  hideFooter: true # hide the footer from the theme
 
   socialIcons:
     - name: github
