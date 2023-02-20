@@ -18,6 +18,8 @@ Params:
       url: 'https://github.com/cwrenhold'
     - name: linkedin
       url: 'https://www.linkedin.com/in/catherine-wrenhold-84a58623a'
+    - name: twitter
+      url: 'https://twitter.com/cwrenhold'
 
   homeInfoParams:
     title: Blog
