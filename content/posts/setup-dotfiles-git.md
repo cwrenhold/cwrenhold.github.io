@@ -1,7 +1,6 @@
 ---
 title: "How To Setup a Git Repository for Your Dotfiles"
 date: 2023-02-25T11:33:26Z
-draft: true
 ---
 
 ## The Problem
