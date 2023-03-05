@@ -237,3 +237,7 @@ Once this is running, we can rebuild the application by running the "Task: Run B
 ## Conclusion
 
 This setup is actually a little overly complicated for what we wanted to accomplish, but it's also given us a good starting point for other Rust projects, and a nice dev container setup which we can re-use for similar projects in other languages.
+
+## Code
+
+You can find the code for this post on GitHub: <https://github.com/cwrenhold/rust-wasm-hello-world>
