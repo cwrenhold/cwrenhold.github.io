@@ -33,4 +33,10 @@ This means that my notes are broken down automatically into two sets of tasks:
 - Carry over from yesterday - this is for anything which wasn't completed the previous day
 - To Do - this is for anything which I need to do today as is starting today
 
+## Long Term Tasks with Kanban
 
+## Periodic Notes
+
+## Dataview
+
+## Advanced Tables
