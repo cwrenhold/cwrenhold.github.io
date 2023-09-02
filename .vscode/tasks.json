@@ -6,7 +6,7 @@
         {
             "label": "Serve Drafts",
             "type": "shell",
-            "command": "hugo server -D",
+            "command": "hugo server -D -v --gc --debug",
             "group": {
                 "kind": "test",
                 "isDefault": true
