@@ -1,12 +1,16 @@
 baseURL: 'https://www.wrenhold.com'
 languageCode: en-gb
 title: Catherine Wrenhold
-theme: PaperMod
+theme: Stack
 
 Params:
+  mainSections:
+  - posts
   showWordCount: true
   showReadingTime: true
-  dateFormat: 02 January, 2006
+  dateFormat:
+    published: 02 January, 2006
+    lastUpdated: 02 January, 2006 15:04
   defaultTheme: auto
   showCodeCopyButtons: true
   showShareButtons: true
@@ -21,18 +25,56 @@ Params:
     # - name: twitter
     #   url: 'https://twitter.com/cwrenhold'
 
+  article:
+    toc: true
+
+  sidebar:
+    compact: false
+    avatar:
+      enabled: true
+      local: true
+      src: 'images/avatar.jpeg'
+    subtitle: >-
+      Hi, this is just a place for me to write down things for myself, showing
+      what I've learnt and where I think it might help others.
+
   homeInfoParams:
     title: Blog
     content: >-
       Hi, this is just a place for me to write down things for myself, showing
       what I've learnt and where I think it might help others.
 
+  widgets:
+    homepage: []
+    toc: []
+
 menu:
   main:
+    - identifier: home
+      name: Home
+      url: /
+      weight: 1
+      params:
+        icon: home
     - identifier: tags
       name: Tags
       url: /tags/
       weight: 10
+      params:
+        icon: tag
+    # Additional icons from: https://github.com/tabler/tabler-icons
+    - identifier: github
+      name: GitHub
+      url: 'https://github.com/cwrenhold'
+      weight: 20
+      params:
+        icon: github
+    - identifier: linkedin
+      name: LinkedIn
+      url: 'https://www.linkedin.com/in/catherine-wrenhold-84a58623a'
+      weight: 30
+      params:
+        icon: linkedin
 
 markup:
   highlight:

@@ -21,7 +21,7 @@ This `configuration.nix` file includes a huge amount of configuration in a relat
 One thing which I would highly recommend setting up as quickly as possible after you're familiar with the broad outline of this file is setting up support for flakes. Flakes are a relatively new feature in Nix OS, however, they provide a way to manage Nix projects in a more modern way. This can be done by adding the following line to the `configuration.nix` file:
 
 ```nix
-nix.settings.experimental-features = [ "nix-command flakes" ];
+    nix.settings.experimental-features = [ "nix-command flakes" ];
 ```
 
 Another setting which I would recommend setting up quickly is setting up your editor. In my case, I will be using neovim for this VM. This can be done in a few ways:

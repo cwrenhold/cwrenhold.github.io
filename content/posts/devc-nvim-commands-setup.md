@@ -2,6 +2,7 @@
 title: "Setting up devc-nvim-commands"
 date: 2024-03-17T10:33:21Z
 tags: ["neovim", "dev containers", "bash"]
+toc: true
 ---
 
 ## What is devc-nvim-commands?
