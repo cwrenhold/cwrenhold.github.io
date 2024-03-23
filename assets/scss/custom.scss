@@ -63,3 +63,47 @@ header h1.article-title {
 pre {
     min-width: 2rem;
 }
+
+#cookie-notice {
+    font-size: larger;
+    padding: 0.5rem 1rem;
+    display: none;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    z-index: 1000;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    width: 100%;
+    background: var(--card-background);
+    color: var(--accent-color);
+    border-top: 1px solid var(--accent-color);
+
+    & a {
+        font-weight: 600;
+        display: inline-flex;
+        cursor: pointer;
+        margin-left: 0.5rem;
+        border: 1px solid var(--accent-color);
+        border-radius: 0.25rem;
+        padding: 0.25rem 0.5rem;
+
+        &:hover {
+            background: var(--accent-color);
+            color: var(--body-background-color);
+        }
+    }
+
+    @media (max-width: 1150px) {
+        left: 0px;
+        & span {
+            display: block;
+            padding-top: 3px;
+            margin-bottom: 1rem;
+        }
+        & a {
+            position: relative;
+            bottom: 4px;
+        }
+    }
+}

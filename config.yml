@@ -17,6 +17,10 @@ Params:
   showtoc: true
   hideFooter: true # hide the footer from the theme
 
+  googleAnalytics:
+    enabled: false
+    trackingID: ''
+
   socialIcons:
     - name: github
       url: 'https://github.com/cwrenhold'
