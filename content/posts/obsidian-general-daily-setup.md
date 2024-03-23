@@ -2,6 +2,9 @@
 title: "Setting up Obsidian for daily and general use"
 date: 2023-07-22T08:43:22Z
 draft: true
+icon: markdown
+summary: >-
+    A guide to setting up Obsidian for daily and general use, including managing daily tasks, long term tasks, and general knowledge.
 ---
 
 Obsidian is a powerful tool for note-taking and knowledge management. It's also a fantastic tool for managing your daily, and long term tasks. In this post, I'm going to walk through how I use Obsidian to manage my daily tasks, and how I use it to manage my long term tasks, as well as keeping track of general knowledge around my work.

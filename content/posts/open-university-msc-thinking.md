@@ -2,6 +2,9 @@
 title: "Thinking of studying for an MSc with the Open University"
 date: 2023-09-02T14:30:34Z
 tags: ['open university', 'msc']
+icon: certificate
+summary: >-
+    Recently, I've been thinking about making a return to studies in a more formal fashion. In particular, I'm thinking of studying a Computing course with the Open University. This post outlines my thoughts on this.
 ---
 
 Recently, I've been thinking about making a return to studies in a more formal fashion. In particular, I'm thinking of studying a Computing course with the Open University. The one which I've found which I think would work for me is [MSc in Computing (Software Engineering)](https://www.open.ac.uk/postgraduate/qualifications/f66#MSc%20in%20Computing%20(Software%20Engineering)).

@@ -11,14 +11,16 @@
 
     <div class="article-title-wrapper">
         <h1 class="article-title">
-            <a
-                href="{{ .RelPermalink }}"
+            <span
                 {{ if .Params.draft }}
                     class="article-draft"
                 {{ end }}
             >
                 {{- .Title -}}
-            </a>
+        </span>
+            {{- with .Params.icon }}
+                {{ partial "helper/icon" . }}
+            {{ end -}}
         </h1>
     
         {{ with .Params.description }}

@@ -3,6 +3,9 @@ title: "Setting up devc-nvim-commands"
 date: 2024-03-17T10:33:21Z
 tags: ["neovim", "dev containers", "bash"]
 toc: true
+icon: brand-docker
+summary: >-
+    A collection of commands I've created in bash to make it easier to manage neovim configurations and control dev containers.
 ---
 
 ## What is devc-nvim-commands?

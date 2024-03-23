@@ -2,6 +2,9 @@
 title: "Setting up Hugo for GitHub Pages using a Dev Container"
 date: 2023-02-19T20:01:40Z
 tags: ['hugo', 'vscode', 'dev containers', 'static websites']
+icon: markdown
+summary: >-
+    A guide to setting up Hugo for GitHub Pages using a dev container in vscode.
 ---
 
 Hugo is a tool for generating static websites for you using MarkDown files, and it's what I use to create this website. This makes the process of setting up a static website for things like this quite simple and easy to maintain and extend. However, in order to use Hugo, you need to install it on your machine along with Go. I like to keep my system relatively clean of this kind of thing just because otherwise I end up with a lot of different tools installed all over the shop. To make this easier, I decided I would use a dev container setup instead.

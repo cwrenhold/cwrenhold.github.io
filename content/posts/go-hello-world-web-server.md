@@ -2,6 +2,9 @@
 title: "Creating a Hello World web application and form processing in Go using a Dev Container"
 date: 2023-03-12T13:41:00Z
 tags: ['go', 'hello world', 'dev containers']
+icon: brand-golang
+summary: >-
+    In this post, we're going to look through creating a simple web application in Go using a dev container, which will host a simple "Hello World" page, and then we can extend that with a page with submits a form.
 ---
 
 ## Introduction

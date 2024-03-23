@@ -19,6 +19,9 @@
             >
                 {{- .Title -}}
             </a>
+            {{- with .Params.icon }}
+                {{ partial "helper/icon" . }}
+            {{ end -}}
         </h2>
     
         {{ with .Params.description }}
@@ -56,6 +59,9 @@
                 </time>
             </div>
         {{ end }}
+        <div class="article-read">
+            <a href="{{ .RelPermalink }}" class="link">Read more...</a>
+        </div>
     </footer>
     {{ end }}
 
