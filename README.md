@@ -15,6 +15,7 @@ After cloning the repo the first time, it is best to update the theme submodule 
 
 ```bash
 git submodule update --init themes/PaperMod
+git submodule update --init themes/Stack
 ```
 
 Alternatively, you can update all of the submodules (should any more be added in the future) by running:

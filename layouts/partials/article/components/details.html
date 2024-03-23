@@ -1,4 +1,4 @@
-<div class="article-details">
+<div class="article-details page-details">
     {{ if .Params.categories }}
     <header class="article-category">
         {{ range (.GetTerms "categories") }}
@@ -11,7 +11,12 @@
 
     <div class="article-title-wrapper">
         <h1 class="article-title">
-            <a href="{{ .RelPermalink }}">
+            <a
+                href="{{ .RelPermalink }}"
+                {{ if .Params.draft }}
+                    class="article-draft"
+                {{ end }}
+            >
                 {{- .Title -}}
             </a>
         </h1>

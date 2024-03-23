@@ -3,13 +3,63 @@ article {
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25) !important;
 }
 
-section > h2 {
+.article-details.page-details {
     background-color: var(--pre-background-color);
+    border-inline-start: var(--heading-border-size)solid var(--accent-color);
     padding: calc(var(--card-padding) * 0.25);
-    margin-left: calc(var(--card-padding) * -1);
-    margin-right: calc(var(--card-padding) * -1);
+    padding-bottom: var(--card-padding) !important;
+}
+
+header:has(.article-details.page-details) {
+    &:after {
+        // Display a horizontal rule after the article details
+        content: "";
+        display: block;
+        border-bottom: var(--heading-border-size) solid var(--pre-background-color);
+        margin: var(--card-padding);
+    }
+}
+
+.article-draft {
+    &:before, &:after {
+        content: "Draft";
+        background-color: var(--accent-color);
+        color: var(--pre-background-color);
+        padding: 0.25rem;
+        border-radius: 0.25rem;
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
+    }
+}
+
+section {
+    & > h2, & > h3, & > h4, & > h5 {
+        background-color: var(--pre-background-color);
+        margin-left: calc(var(--card-padding) * -1);
+        margin-right: calc(var(--card-padding) * -1);
+    }
+
+    & > h2 {
+        padding: calc(var(--card-padding) * 0.25);
+    }
+
+    & > h3 {
+        padding: calc(var(--card-padding) * 0.125);
+    }
+
+    & > h4 {
+        padding: calc(var(--card-padding) * 0.0625);
+    }
+
+    & > h5 {
+        padding: calc(var(--card-padding) * 0.03125);
+    }
 }
 
 header h1.article-title {
     font-size: 3rem;
+}
+
+pre {
+    min-width: 2rem;
 }

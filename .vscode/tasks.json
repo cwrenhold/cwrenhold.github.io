@@ -15,7 +15,7 @@
             "problemMatcher": []
         },
         {
-            "label": "Create new post",
+            "label": "Create new post (single)",
             "command": "hugo",
             "type": "process",
             "options": {
@@ -26,12 +26,30 @@
                 "posts/${input:postName}.md"
             ],
             "problemMatcher": []
+        },
+        {
+            "label": "Create new post (bundle)",
+            "command": "hugo",
+            "type": "process",
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "args": [
+                "new",
+                "posts/${input:bundleName}/index.md"
+            ],
+            "problemMatcher": []
         }
     ],
     "inputs": [
         {
             "id": "postName",
-            "description": "Post filename:",
+            "description": "Post filename (in kebab-case):",
+            "type": "promptString"
+        },
+        {
+            "id": "bundleName",
+            "description": "Post bundle name (in kebab-case):",
             "type": "promptString"
         }
     ]
