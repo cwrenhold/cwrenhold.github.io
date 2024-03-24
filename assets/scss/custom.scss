@@ -53,7 +53,7 @@ header:has(.article-details.page-details) {
     }
 }
 
-section {
+section.article-content {
     & > h2, & > h3, & > h4, & > h5 {
         background-color: var(--pre-background-color);
         margin-left: calc(var(--card-padding) * -1);
@@ -79,6 +79,13 @@ section {
     & > h5 {
         padding: calc(var(--card-padding) * 0.03125);
     }
+}
+
+.widget--toc li code {
+    background-color: var(--code-background-color);
+    padding: 1px 4px;
+    border-radius: var(--tag-border-radius);
+    font-size: 1.3rem;
 }
 
 header h1.article-title {

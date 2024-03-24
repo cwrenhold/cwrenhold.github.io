@@ -50,7 +50,8 @@ Params:
 
   widgets:
     homepage: []
-    toc: []
+    page:
+      - type: toc
 
 menu:
   main:
