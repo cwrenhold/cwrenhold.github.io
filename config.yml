@@ -49,7 +49,18 @@ Params:
       what I've learnt and where I think it might help others.
 
   widgets:
-    homepage: []
+    homepage: 
+      - type: search
+      - type: archives
+        params:
+          limit: 5
+      # Maybe use the icon for the categories widget?
+      # - type: categories
+      #   params:
+      #     limit: 10
+      - type: tag-cloud
+        params:
+          limit: 10
     page:
       - type: toc
 
@@ -61,12 +72,12 @@ menu:
       weight: 1
       params:
         icon: home
-    - identifier: tags
-      name: Tags
-      url: /tags/
-      weight: 10
-      params:
-        icon: tag
+    # - identifier: tags
+    #   name: Tags
+    #   url: /tags/
+    #   weight: 10
+    #   params:
+    #     icon: tag
     # Additional icons from: https://github.com/tabler/tabler-icons
     - identifier: github
       name: GitHub
