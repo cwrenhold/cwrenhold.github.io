@@ -117,6 +117,37 @@ pre {
     margin-left: auto;
 }
 
+.image-details {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: calc(var(--card-padding) * 0.25) var(--card-padding);
+    background-color: var(--pre-background-color);
+    border-inline-start: var(--heading-border-size)solid var(--accent-color);
+    color: var(--card-text-color-tertiary);
+    border-bottom: 1px solid var(--card-separator-color);
+
+    // Ensure they're the same width
+    & > * {
+        flex: 1;
+    }
+
+    & > *:first-child {
+        margin-right: auto;
+        text-align: left;
+    }
+
+    & > *:last-child {
+        margin-left: auto;
+        text-align: right;
+    }
+
+    & > div ~ div {
+        border-inline-start: 1px solid var(--card-text-color-tertiary);
+        padding-inline-start: var(--card-padding);
+    }
+}
+
 #cookie-notice {
     font-size: larger;
     padding: 0.5rem 1rem;
