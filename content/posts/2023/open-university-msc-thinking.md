@@ -3,6 +3,8 @@ title: "Thinking of studying for an MSc with the Open University"
 date: 2023-09-02T14:30:34Z
 tags: ['open university', 'msc']
 icon: certificate
+aliases:
+  - /posts/open-university-msc-thinking/
 summary: >-
     Recently, I've been thinking about making a return to studies in a more formal fashion. In particular, I'm thinking of studying a Computing course with the Open University. This post outlines my thoughts on this.
 ---

@@ -3,6 +3,8 @@ title: "Getting Started with Nix OS"
 date: 2024-03-09T10:40:39Z
 tags: ['nixos', 'configuration']
 icon: snowflake
+aliases:
+  - /posts/nix-os-getting-started/
 summary: >-
     A simple guide to getting started with Nix OS, including setting up a basic configuration, and then extending this with flakes and home-manager.
 ---

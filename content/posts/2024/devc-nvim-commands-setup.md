@@ -4,6 +4,8 @@ date: 2024-03-17T10:33:21Z
 tags: ["neovim", "dev containers", "bash"]
 toc: true
 icon: brand-docker
+aliases:
+  - /posts/devc-nvim-commands-setup/
 summary: >-
     A collection of commands I've created in bash to make it easier to manage neovim configurations and control dev containers.
 ---

@@ -1,6 +1,4 @@
 {
-    // See https://go.microsoft.com/fwlink/?LinkId=733558
-    // for the documentation about the tasks.json format
     "version": "2.0.0",
     "tasks": [
         {
@@ -23,7 +21,7 @@
             },
             "args": [
                 "new",
-                "posts/${input:postName}.md"
+                "posts/${input:year}/${input:postName}.md"
             ],
             "problemMatcher": []
         },
@@ -36,7 +34,7 @@
             },
             "args": [
                 "new",
-                "posts/${input:bundleName}/index.md"
+                "posts/${input:year}/${input:bundleName}/index.md"
             ],
             "problemMatcher": []
         }
@@ -50,6 +48,11 @@
         {
             "id": "bundleName",
             "description": "Post bundle name (in kebab-case):",
+            "type": "promptString"
+        },
+        {
+            "id": "year",
+            "description": "Year of post:",
             "type": "promptString"
         }
     ]

@@ -3,6 +3,8 @@ title: "Creating a simple wasm application in Rust in a dev container with nginx
 date: 2023-03-05T13:42:34Z
 tags: ['rust', 'wasm', 'hello world', 'dev containers']
 icon: brand-rust
+aliases:
+  - /posts/rust-wasm-hello-world/
 summary: >-
     A guide to creating a simple wasm application in Rust, and serving it with nginx in a dev container.
 ---

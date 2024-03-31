@@ -3,6 +3,8 @@ title: "How To Setup a Git Repository for Your Dotfiles"
 date: 2023-02-25T11:33:26Z
 tags: ['git', 'configuration']
 icon: brand-git
+aliases:
+  - /posts/setup-dotfiles-git/
 summary: >-
     A guide to setting up a git repository for your dotfiles to make it easier to share settings between your different Linux machines.
 ---

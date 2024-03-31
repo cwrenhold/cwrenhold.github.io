@@ -3,6 +3,8 @@ title: "Setting up Obsidian for daily and general use"
 date: 2023-07-22T08:43:22Z
 draft: true
 icon: markdown
+aliases:
+  - /posts/obsidian-general-daily-setup/
 summary: >-
     A guide to setting up Obsidian for daily and general use, including managing daily tasks, long term tasks, and general knowledge.
 ---

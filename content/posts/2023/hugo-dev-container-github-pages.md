@@ -3,6 +3,8 @@ title: "Setting up Hugo for GitHub Pages using a Dev Container"
 date: 2023-02-19T20:01:40Z
 tags: ['hugo', 'vscode', 'dev containers', 'static websites']
 icon: markdown
+aliases:
+  - /posts/hugo-dev-container-github-pages/
 summary: >-
     A guide to setting up Hugo for GitHub Pages using a dev container in vscode.
 ---

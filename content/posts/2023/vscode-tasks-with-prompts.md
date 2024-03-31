@@ -3,6 +3,8 @@ title: "Vscode Tasks With Prompts"
 date: 2023-02-19T16:33:24Z
 tags: ['vscode', 'automation']
 icon: brand-vscode
+aliases:
+  - /posts/vscode-tasks-with-prompts/
 summary: >-
     A guide to setting up tasks in vscode with prompts to make them more flexible and powerful.
 ---

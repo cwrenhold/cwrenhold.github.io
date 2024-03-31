@@ -3,6 +3,8 @@ title: "Creating tasks in Vscode for running Rspec tests for Rails projects"
 date: 2023-02-19T19:21:46Z
 tags: ['ruby', 'rails', 'vscode']
 icon: test-pipe
+aliases:
+  - /posts/ruby-rails-rspec-vscode-task/
 summary: >-
     A guide to setting up tasks in vscode to run rspec tests for Rails projects.
 ---
