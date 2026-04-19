@@ -8,11 +8,11 @@
 			// Rebuild the container if it already exists to update.
 			"VARIANT": "hugo_extended",
 			// Update VERSION to pick a specific hugo version.
-			// Example versions: latest, 0.73.0, 0,71.1
+			// Example versions: 0.160.1, 0.150.0
 			// Rebuild the container if it already exists to update.
-			"VERSION": "latest",
-			// Update NODE_VERSION to pick the Node.js version: 12, 14
-			"NODE_VERSION": "14"
+			"VERSION": "0.160.1",
+			// Update NODE_VERSION to pick the Node.js version: 20, 22
+			"NODE_VERSION": "20"
 		}
 	},
 
